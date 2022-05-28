@@ -1,0 +1,58 @@
+.recommendedMovie_container {
+  position: relative;
+  max-width: 1400px;
+  --margin-width: 1.5em;
+  margin: var(--margin-width);
+  width: calc(100% - 2 * var(--margin-width));
+  padding: 1.25em;
+  background-color: #97969740;
+  border-radius: 0.75em;
+}
+
+.card {
+  width: 100%;
+  font-size: 1.25em;
+  font-family: "Sen", sans-serif;
+  background-color: #fffefe85;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0.5em;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > img {
+  width: 1.25em;
+}
+
+.header > img:hover {
+  cursor: pointer;
+}
+
+.history {
+  padding: 0.5em;
+}
+
+.history > p {
+  margin: 0.25em;
+  padding: 0.5em;
+  border: 0.1em solid black;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+
+.history > p:hover {
+  cursor: pointer;
+  background-color: #b7b7b79a;
+}
+
+@media (min-width: 1300px) {
+  .recommendedMovie_container {
+    margin: 0 auto;
+  }
+}

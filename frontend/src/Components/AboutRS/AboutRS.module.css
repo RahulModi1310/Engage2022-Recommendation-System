@@ -1,0 +1,14 @@
+.aboutRS_container {
+  position: relative;
+  max-width: 1400px;
+  --margin-width: 1.5em;
+  margin: var(--margin-width);
+  width: calc(100% - 2 * var(--margin-width));
+  border-radius: 0.75em;
+}
+
+@media (min-width: 1300px) {
+  .aboutRS_container {
+    margin: 0 auto;
+  }
+}
