@@ -1,6 +1,5 @@
 const express = require('express')
 const dotenv = require('dotenv');
-const morgan = require('morgan');
 const cors = require('cors');
 const AppError = require("./utils/appError");
 const globalErrorHandler = require('./Controller/errorController');
@@ -32,6 +31,7 @@ app.use(cors(corsOptionsDelegate));
 
 console.log(process.env.NODE_ENV)
 if (process.env.NODE_ENV === 'development') {
+  const morgan = require('morgan');
   app.use(morgan('dev'));
 }
 
