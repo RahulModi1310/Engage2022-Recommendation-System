@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const req_url = "https://engage2022-rs-backend.herokuapp.com:4000/api/v1";
+const req_url = "https://engage2022-rs-backend.herokuapp.com/api/v1";
 
 
 const getMovies = () => {
