@@ -1,4 +1,9 @@
 import React from "react";
+import ML_Model from "../Assets/ML_Model.jpg";
+
+const MLModel_styles = {
+    width: "100%",
+}
 
 const AboutRS_content = [
     {
@@ -14,7 +19,15 @@ const AboutRS_content = [
                 <h4>Content-base filtering</h4>
                 <h4>Collaborative-base filltering</h4>
             </>,
-    }
+    },
+    {
+        id: 2,
+        title: "ML model Algorithm I used",
+        content:
+            <>
+                <img src={ML_Model} style={MLModel_styles} alt="ML Model Flowchart" />
+            </>
+    },
 ];
 
 export default AboutRS_content;
